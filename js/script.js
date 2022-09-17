@@ -1,12 +1,29 @@
 // let a = "Mango";
 // b = "Guava";
 // c = "Apple";
-// // let i = prompt("Enter your favourite fruit");
+// let i = prompt("Enter your favourite fruit");
 
 // if (i < 5) {
 // 	console.log("Mango");
 // } else if (i <= 20);
 // console.log("Guava");
+
+
+// let a = "Mango";
+// b = "Apple";
+// c = "Guavava";
+// let i = prompt("Enter your favourite fruit");
+
+// if(i < 5){
+//     console.log("Mango is my favourite fruit");
+// }
+//     else if(i <= 20)
+//     console.log("Apple")
+
+//     else
+//     console.log("Guavava");
+
+
 
 // 1. Check if a number is odd or even in JavaScript
 
@@ -76,3 +93,38 @@ function square(number){
     return number * number;
 }
 console.log(square(2));
+
+// Arguments
+// For Sum
+
+function sum(){
+    let total = 0;
+    for(let value of arguments)
+    total += value;
+    return total;
+}
+console.log(sum(1, 2, 3, 4, 10, 15, 20))
+
+// For Subtaraction
+
+function subtraction(){
+    let total = 0;
+    for(let value of arguments)
+    total += value;
+    return total;
+}
+console.log(subtraction(20, 2, -5, 1))
+
+// Rest Operators
+
+function fruits(...a){
+    console.log("fruits", a)
+}
+fruits("apple", "mango", "orange", "pear", "cherry");   
+
+// Default parameters
+
+function intrest(principal, rate, years){
+    return principal * rate / 100 * years;
+}
+console.log(intrest(5000, 2.5, 3));
