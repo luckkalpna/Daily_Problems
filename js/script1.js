@@ -180,14 +180,13 @@ for(let b of "Ajay"){
 */
 
 // While loop
-/*
+/*cy
 let n = prompt("Enter a value of n")
 let i = 0;
 while(i<n){
     console.log(i+1)
     i++;
 }
-*/
 
 let n = prompt("Enter a value of n")
 let i = 10;
@@ -195,4 +194,62 @@ do{
     console.log(i)
     i++;
 }while(i<n)
+*/
+
+// Functions
+/*
+function onePlusAvg(x, y){
+    console.log("Done")
+    return Math.round(1 + (x + y) / 2)
+}
+
+let a = 2;
+let b = 5;
+let c = 8; 
+
+console.log("One plus sum of average is ", onePlusAvg(a, b));
+console.log("One plus sum of average is ", onePlusAvg(b, c));
+console.log("One plus sum of average is ", onePlusAvg(c, a));
+
+const sum = (p, q) => {
+    return p + q;
+}
+console.log(sum(10, 21));
+
+const hello = () => {
+    console.log("Hello Everyone");
+    return "Hello";
+}
+let v = hello();
+console.log(v);
+*/
+
+// Practice of previous question
+/*
+let marks = {
+    ayush: 30,
+    brijesh: 20,
+    chandni: 18,
+    divya: 28
+}
+// for loop
+for(let i=0;i<Object.keys(marks).length;i++){
+    console.log("The marks of " + Object.keys(marks)[i] + " are " + marks[Object.keys(marks)[i]])
+}
+
+// for in loop
+for(let key in marks){
+    console.log("The marks of " + key + " are " + marks[key])
+}
+*/
+
+// Enter a correct number
+
+let cn  = 29;
+let i;
+while(i != cn){
+    i = prompt("Enter a correct number")
+}
+console.log("You have enterd a correct number");
+
 
