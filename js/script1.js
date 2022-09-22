@@ -1,5 +1,4 @@
-
-// variables 
+// variables
 /*
 let a = 34;
 console.log(a);
@@ -160,11 +159,11 @@ console.log("Sum of first " + n + " " + "natural number is " + sum);
 */
 
 let obj = {
-    cloth: 200,
-    bucket: 100,
-    hanger: 20,
-    food: 50,
-}
+	cloth: 200,
+	bucket: 100,
+	hanger: 20,
+	food: 50,
+};
 
 // for in loop
 /*
@@ -244,12 +243,232 @@ for(let key in marks){
 */
 
 // Enter a correct number
-
+/*
 let cn  = 29;
 let i;
 while(i != cn){
+    console.log("Try again");
     i = prompt("Enter a correct number")
 }
 console.log("You have enterd a correct number");
+*/
+// Mean of 4 numbers
+/*
+const mean = (a, b, c, d)=>{
+    return (a + b + c + d) / 4
+}
+console.log(mean(2, 4, 1, 8));
+*/
+
+// Template literals
+/*
+let boy1 = "Piyush";
+let boy2 = "Devender";
+
+// let sentence = `boy2 is a friend of boy1`
+let sentence = `${boy2} is a friend of ${boy1}`
+console.log(sentence);
+*/
+
+// String Methods
+// Slice function
+/*
+const fristName = "Rohanbharadwaj"
+const friend = "Shivam"
+console.log(fristName.slice(0, 4));
+console.log(fristName.slice(5));
+console.log(fristName.replace("Rohan", "Sohan"));
+console.log(fristName.substring(5, 10));
+console.log(fristName.substring(5));
+console.log(fristName.concat(" is a friend of ", friend, " and they are playing video game. "));
+*/
+
+// Using a for loop to print a string
+/*
+const string = "Practice";
+for(let i of string){
+    console.log(i)
+};
+*/
+
+// Practice
+/*
+const str = "Aka\"";
+console.log(str.length);
+
+let para = "The quick brown fox jump over the lazy dog";
+let para1 = "fox";
+console.log(para.includes(para1));
+console.log(`The word "${para}" ${para.includes(para1) ? " is " : " is not "} in the para`);
+*/
+
+// Use slice method to find a number in a string
+/*
+let string = "Please give me Rs 1000";
+let amount = Number.parseInt(string.slice("Please give me Rs ".length));
+console.log(amount);
+console.log(typeof amount);
+*/
+
+// Arrays
+/*
+let marks_of_class_10 = [63, 45, 78, 32, 67, 45, 71];
+console.log(marks_of_class_10[0]);
+console.log(marks_of_class_10[1]);
+console.log(marks_of_class_10[2]);
+console.log(marks_of_class_10[3]);
+console.log(marks_of_class_10[4]);
+console.log(marks_of_class_10[5]);
+console.log(marks_of_class_10[6]);
+marks_of_class_10[7] = 88; // Adding a value in array
+console.log(marks_of_class_10[7]); // Not exist
+console.log(marks_of_class_10.length);
+marks_of_class_10[2] = 85;
+console.log(marks_of_class_10);
+*/
+
+// Print array with the help of for loop
+/*
+const array = [92, 81, 64, 39, 72];
+for(let i of array){
+    console.log(i);
+}
+*/
+
+// Array methods
+/*
+let num = [34, 23, 87, 97, 54];
+let b = num.toString();
+console.log(b, typeof b);
+let c = num.join(" & ");
+console.log(c, typeof c);
+*/
+/*
+let num = [11, 12, 13, 14, 15, 16, 17];
+let num_more = [20, 21, 22, 23, 24, 25];
+let b = num.toString(num_more);
+let newarray = num.concat(num_more);
+console.log(num);
+console.log(num_more);
+console.log(newarray);
+console.log(newarray.length);
+console.log(b);
+*/
+
+// Array for loop
+/*
+let num = [3, 6, 2, 8, 5];
+for(let i = 0; i<num.length; i++){
+    console.log(num[i]);
+};
+
+// forEach Loop
+
+num.forEach((element)=>{
+    console.log(element*element*element);
+})
+*/
+
+// Array.from
+/*
+const naam = "Ayushi";
+console.log(naam);
+let arr = Array.from(naam);
+console.log(arr);
+*/
+
+// for...of loop
+/*
+let num = [65, 80, 21, 32, 87, 45]
+for(let i of num){
+    console.log(i);
+}
+
+// for...in loop
+
+for(let i in num){
+    console.log(num[i]);
+}
+*/
+
+// Array map method
+/*
+let num = [34, 67, 21, 68];
+// console.log(num);
+let a = num.map((value, index, num)=>{
+    console.log(value, index, num);
+    return value + 5 + index;
+})
+console.log(a);
+*/
+
+// Array filter method
+/*
+let num = [2, 34, 21, 3, 6, 72, 56, 36, 39, 18, 27];
+console.log(num);
+let a = num.filter((a)=>{
+    return (a<30);
+})
+console.log(a);
+*/
+
+// Array reduce method
+/*
+let num = [3, 2, 7, 4, 5, 1, 2];
+let newnum  = num.reduce((a, b)=>{
+    return a + b;
+});
+console.log(newnum);
+*/
+
+// Prompt with adding a new array
+/*
+let arr = [3, 5, 2, 7, 1];
+console.log(arr);
+let a = Number.parseInt(prompt("Enter a number"));
+let newarr = arr.push(a);
+// console.log(arr);
+
+// Using do-while loop
+
+do {
+	a = Number.parseInt(prompt("Enter a number"));
+	let newarr = arr.push(a); // push only storing a number
+} while (a != 0);
+console.log(arr);
+*/
+
+// Using filter method to find those numbers which is divisible by 10
+/*
+// let arr = [20, 32, 56, 30, 60, 330]
+// let n = arr.filter((x)=>{
+//     return x % 5 == 0;
+// })
+// console.log(n);
+
+let num = [2, 6, 3, 1, 7]
+let n = num.map((element)=>{
+    return element*element;
+});
+console.log(n);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
